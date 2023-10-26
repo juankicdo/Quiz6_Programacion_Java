@@ -1,0 +1,42 @@
+public class FiguraGeometrica {
+    private String nombre; // Atributo privado para el nombre de la figura
+    private String color; // Atributo privado para el color de la figura
+
+    public FiguraGeometrica(String nombre, String color) {
+        this.nombre = nombre; // Asigna el valor del nombre (Complejidad O(1))
+        this.color = color; // Asigna el valor del color (Complejidad O(1))
+    }
+
+    public double obtenerArea() {
+        // Método para obtener el área de la figura.
+        // Este método deberá ser implementado en las subclases, por lo que su complejidad
+        // depende de la implementación específica en las subclases. En esta clase base, la
+        // complejidad es O(1) ya que simplemente devuelve un valor predeterminado.
+        return 0.0;
+    }
+
+    public double obtenerPerimetro() {
+        // Método para obtener el perímetro de la figura.
+        // Al igual que obtenerArea, este método deberá ser implementado en las subclases,
+        // por lo que su complejidad depende de la implementación específica en las subclases.
+        // En esta clase base, la complejidad es O(1) ya que simplemente devuelve un valor predeterminado.
+        return 0.0;
+    }
+
+    // Getters y Setters para los atributos privados 'nombre' y 'color'
+    public String getNombre() {
+        return nombre; // Método getter para obtener el valor del nombre (Complejidad O(1))
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre; // Método setter para asignar un nuevo valor al nombre (Complejidad O(1))
+    }
+
+    public String getColor() {
+        return color; // Método getter para obtener el valor del color (Complejidad O(1))
+    }
+
+    public void setColor(String color) {
+        this.color = color; // Método setter para asignar un nuevo valor al color (Complejidad O(1))
+    }
+}
